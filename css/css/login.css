@@ -1,0 +1,122 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Body background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d1b2a; /* الخلفية الداكنة */
+    color: white;
+}
+/* Section layout */
+.login-fb-style {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background: #1b263b; /* خلفية الفورم */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+/* Left side */
+.login-left {
+    flex: 1;
+    background: #14213d; /* أزرق غامق */
+    color: #fca311; /* اللون الذهبي */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.login-left p {
+    font-size: 18px;
+    color: #e5e5e5;
+}
+/* Right side */
+.login-right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box {
+    width: 100%;
+    max-width: 350px;
+}
+.login-box h2 {
+    margin-bottom: 30px;
+    color: #fca311; /* عنوان الفورم */
+    text-align: center;
+}
+/* Input fields */
+.login-box input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #1b263b; /* خلفية الحقول */
+    color: white;
+    transition: 0.3s;
+}
+.login-box input:focus {
+    border-color: #fca311;
+    box-shadow: 0 0 5px rgba(252,163,17,0.5);
+    outline: none;
+}
+/* Buttons */
+.login-box .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #fca311, #ffba3a); /* gradient ذهبي */
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.login-box .login-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+/* Links */
+.signup-link, .forgot-link {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #e5e5e5;
+}
+.signup-link a, .forgot-link a {
+    color: #fca311;
+    text-decoration: none;
+}
+.signup-link a:hover, .forgot-link a:hover {
+    text-decoration: underline;
+}
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .login-fb-style {
+        flex-direction: column;
+    }
+    .login-left, .login-right {
+        flex: none;
+        width: 100%;
+        padding: 30px;
+    }
+}
